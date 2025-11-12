@@ -33,3 +33,42 @@ nav .topnav {
     height: 80px;
     gap: 10px;
 }
+
+.about-section {
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 50px 0;
+    gap: 10px;
+}
+.about-section .text {
+    flex: 2;
+}   
+.about-section .image {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.contactinfo{
+    text-align: justify;
+    padding: 0 50px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(204, 57, 101);
+    color: var(--text-color);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
