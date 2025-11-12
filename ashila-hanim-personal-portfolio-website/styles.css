@@ -8,6 +8,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Afacad', sans-serif;
+    font-size: 15px;
    
 }
 html {
@@ -15,19 +17,18 @@ html {
 } 
 
 body {
-    font-family: 'Afacad', sans-serif;
     background-color: var(--background-color);
 }
 
 a {
-    color: var(--line-color);
+    color: var(--link-color);
     text-decoration: none;
     transition: 0.1s;
 }
 
 nav .topnav a:hover {
     text-decoration: none;
-    color: wheat;
+    color: rgb(103, 156, 165);
 }
 
 nav .topnav {
@@ -75,7 +76,7 @@ img {
 
 .contactinfo a:hover {
     text-decoration: none;
-    color: wheat;
+    color: rgb(103, 156, 165);
 }
 
 footer {
@@ -87,3 +88,171 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Web Dev Projects Page */
+
+body header h1 {
+    font-size: 25px;
+    text-align: center;
+    padding: auto;
+    margin-top: 10px;
+    font-family: 'Afacad', sans-serif;
+    background-color: rgb(226, 172, 189)
+}
+body header .topnavwebdevprojects {
+    color: var(--link-color);
+    display: flex;
+    justify-content: space-evenly;    
+    align-items: center;
+    padding: 0px 50px;
+    background-color: rgb(226, 172, 189);
+
+}
+header div .topnavwebdevprojects a:hover {
+    text-decoration: none;
+    color: wheat;
+
+}
+
+#projects {
+    text-align: center;
+    margin: 50px 0;
+}
+
+#projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+#projects li {
+    margin: 10px 0;
+}
+
+#projects a:hover {
+    color: rgb(103, 156, 165);
+}
+
+body #contact {
+    text-align: center;
+    padding: 0 50px;
+    background-color: rgb(243, 201, 197);
+    border-bottom: 3px solid rgb(255, 112, 112);
+    margin-top: 50px;
+}
+
+/* Personal Portfolio Page */
+
+body .project {
+    margin: 20px 0;
+    display: grid;
+    text-align: center;
+    font-size: 20px;
+}
+
+body .project h3 {
+    font-size: 25px;
+}
+
+body .project ul {
+    list-style: auto;
+}
+
+body .project img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+/* Responsive Design */
+
+/* 🌸 RESPONSIVE DESIGN 🌸 */
+
+/* For large tablets and small laptops (width ≤ 1024px) */
+@media (max-width: 1024px) {
+    nav .topnav,
+    body header .topnavwebdevprojects {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 20px;
+        height: auto;
+    }
+
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 30px;
+    }
+
+    .about-section .text, 
+    .about-section .image {
+        flex: none;
+        width: 100%;
+    }
+
+    img {
+        width: 80%;
+        max-width: 400px;
+    }
+}
+
+/* For tablets and small screens (width ≤ 768px) */
+@media (max-width: 768px) {
+    nav .topnav a,
+    .topnavwebdevprojects a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    #projects h2 {
+        font-size: 20px;
+    }
+
+    #projects ul {
+        padding: 0 20px;
+    }
+
+    .contactinfo {
+        padding: 20px;
+    }
+}
+
+/* For mobile phones (width ≤ 480px) */
+@media (max-width: 480px) {
+    nav .topnav,
+    .topnavwebdevprojects {
+        flex-direction: column;
+        gap: 8px;
+        padding: 15px;
+    }
+
+    nav .topnav a,
+    .topnavwebdevprojects a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .about-section {
+        margin: 30px 0;
+        padding: 0 20px;
+    }
+
+    .about-section .text p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
