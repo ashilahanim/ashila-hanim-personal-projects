@@ -22,6 +22,12 @@ body {
 a {
     color: var(--line-color);
     text-decoration: none;
+    transition: 0.1s;
+}
+
+nav .topnav a:hover {
+    text-decoration: none;
+    color: wheat;
 }
 
 nav .topnav {
@@ -46,20 +52,30 @@ nav .topnav {
     flex: 2;
 }   
 .about-section .image {
-    flex: 2;
+    flex: 1;
     display: flex;
     justify-content: right;
     align-items: center;
 }
+
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
 
 }
 
-.contactinfo{
-    text-align: justify;
+.contactinfo {
+    text-align: center;
     padding: 0 50px;
+    background-color: rgb(243, 201, 197);
+    border-bottom: 3px solid rgb(255, 112, 112);
+    margin-top: 50px;
+}
+
+.contactinfo a:hover {
+    text-decoration: none;
+    color: wheat;
 }
 
 footer {
@@ -70,5 +86,4 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: 50px;
 }
